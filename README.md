@@ -4,11 +4,16 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install php apache2 php8.1-fpm freeradius libapache2-mod-php mariadb-server freeradius-mysql freeradius-utils php-{gd,common,mail,mail-mime,mysql,pear,db,mbstring,xml,curl} -y
+
 sudo apt install phpmyadmin
+
 sudo systemctl enable --now apache2 && sudo systemctl enable freeradius
+
 sudo mysql_secure_installation
 
+
 --
+
 Enter current password for root (enter for none): enter
 
 Switch to unix_socket authentication [Y/n] n
@@ -22,6 +27,7 @@ Disallow root login remotely? [Y/n] y
 Remove test database and access to it? [Y/n] y
 
 Reload privilege tables now? [Y/n] y
+
 --
 
 sudo mysql -u root -p

@@ -1,0 +1,6 @@
+PASSWORD_SERVER	= 'Nueva1238'
+PASSWORD_INNER	= 'whatever'
+PASSWORD_CA	= 'Nueva1238'
+PASSWORD_CLIENT	= 'whatever'
+USER_NAME	= 'ipnero@gmail.com'
+CA_DEFAULT_DAYS  = '60'
